@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manar Alarjan - Portfolio</title>
+  <style>
+    :root {
+      --main-color: #4a90e2;
+      --bg-color: #f0f4f8;
+      --text-color: #333;
+      --card-bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--main-color);
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      background-color: var(--card-bg);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section-title {
+      font-size: 20px;
+      color: var(--main-color);
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+
+    a.linkedin {
+      color: var(--main-color);
+      text-decoration: none;
+    }
+
+    a.linkedin:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      header h1 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Manar Alarjan</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#interests">Interests</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="section-title">About Me</div>
+    <p>I am Manar Alarjan, a third-year student majoring in Smart Devices Computing at Tafila Technical University. I am passionate about Artificial Intelligence and continuously seek to expand my knowledge through academic and practical experiences.</p>
+  </section>
+
+  <section id="skills">
+    <div class="section-title">Skills</div>
+    <p>I am proficient in several programming languages including C++, Java, Python, and PHP. I use these languages to build academic projects and explore real-world applications.</p>
+  </section>
+
+  <section id="interests">
+    <div class="section-title">Interests</div>
+    <p>My main interests lie in Artificial Intelligence, Machine Learning, and software development. I enjoy exploring emerging technologies and applying them to smart solutions.</p>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">Contact</div>
+    <p>You can reach me via LinkedIn:  
+      <a class="linkedin" href="https://www.linkedin.com/in/manar-alarjan-098865321" target="_blank">
+        www.linkedin.com/in/manar-alarjan-098865321
+      </a>
+    </p>
+  </section>
+
+</body>
+</html>
